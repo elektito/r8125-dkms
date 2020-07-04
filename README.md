@@ -4,7 +4,7 @@ Original source code obtained from [here][1].
 
 # How to add DKMS module
 
-1. Copy repo contents to /usr/src in a directory named r8125-9.003.05.
+1. Copy repo contents to /usr/src in a directory named r8125-9.003.05: `sudo cp -R . /usr/src/r8125-9.003.05`
 2. Add DKMS module: `sudo dkms add -m r8125 -v 9.003.05`
 3. Build DKMS module: `sudo dkms build -m r8125 -v 9.003.05`
 4. Install DKMS module: `sudo dkms install -m r8125 -v 9.003.05`
