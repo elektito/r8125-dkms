@@ -1,0 +1,8 @@
+src/*.o
+src/*.ko
+src/*.mod
+src/*.cmd
+src/.cache.mk
+src/Module.symvers
+src/modules.order
+src/*.mod.c
