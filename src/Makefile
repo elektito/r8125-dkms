@@ -82,7 +82,7 @@ ifneq ($(KERNELRELEASE),)
 	ifeq ($(ENABLE_TX_NO_CLOSE), y)
 		EXTRA_CFLAGS += -DENABLE_TX_NO_CLOSE
 	endif
-else
+endif
 	BASEDIR := /lib/modules/$(shell uname -r)
 	KERNELDIR ?= $(BASEDIR)/build
 	PWD :=$(shell pwd)
@@ -156,5 +156,3 @@ install:
 #else
 #	$(MAKE) -C $(KERNELDIR) SUBDIRS=$(PWD) INSTALL_MOD_DIR=$(RTKDIR) modules_install
 #endif
-
-endif
